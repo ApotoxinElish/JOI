@@ -6,8 +6,8 @@ import MainPage from './pages/mainpage'
 function App() {
   return (
     <div className="apppage">
-      <MainPage />
-      {/* <ChatPage /> */}
+      {/* <MainPage /> */}
+      <ChatPage />
       <div></div>
     </div>
   )

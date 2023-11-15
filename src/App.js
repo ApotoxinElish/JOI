@@ -1,5 +1,5 @@
 import logo from './logo.svg'
-import './App.css'
+// import './App.css'
 
 function App() {
   return (
@@ -169,9 +169,9 @@ function App() {
                       style={{ 'margin-right': '16px', padding: '8px 10px' }}
                     >
                       <div>
-                        Get
+                        Get&nbsp;
                         <span>
-                          c.ai
+                          JOI
                           <span
                             className="premium-color"
                             style={{ 'font-weight': 'bold' }}

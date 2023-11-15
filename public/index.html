@@ -1,43 +1,589 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <style class="darkreader darkreader--fallback" media="screen"></style>
+    <style class="darkreader darkreader--text" media="screen"></style>
+    <style class="darkreader darkreader--invert" media="screen"></style>
+    <style class="darkreader darkreader--inline" media="screen">
+      [data-darkreader-inline-bgcolor] {
+        background-color: var(--darkreader-inline-bgcolor) !important;
+      }
+      [data-darkreader-inline-bgimage] {
+        background-image: var(--darkreader-inline-bgimage) !important;
+      }
+      [data-darkreader-inline-border] {
+        border-color: var(--darkreader-inline-border) !important;
+      }
+      [data-darkreader-inline-border-bottom] {
+        border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+      }
+      [data-darkreader-inline-border-left] {
+        border-left-color: var(--darkreader-inline-border-left) !important;
+      }
+      [data-darkreader-inline-border-right] {
+        border-right-color: var(--darkreader-inline-border-right) !important;
+      }
+      [data-darkreader-inline-border-top] {
+        border-top-color: var(--darkreader-inline-border-top) !important;
+      }
+      [data-darkreader-inline-boxshadow] {
+        box-shadow: var(--darkreader-inline-boxshadow) !important;
+      }
+      [data-darkreader-inline-color] {
+        color: var(--darkreader-inline-color) !important;
+      }
+      [data-darkreader-inline-fill] {
+        fill: var(--darkreader-inline-fill) !important;
+      }
+      [data-darkreader-inline-stroke] {
+        stroke: var(--darkreader-inline-stroke) !important;
+      }
+      [data-darkreader-inline-outline] {
+        outline-color: var(--darkreader-inline-outline) !important;
+      }
+      [data-darkreader-inline-stopcolor] {
+        stop-color: var(--darkreader-inline-stopcolor) !important;
+      }
+    </style>
+    <style class="darkreader darkreader--variables" media="screen">
+      :root {
+        --darkreader-neutral-background: #1f2020;
+        --darkreader-neutral-text: #d6d0c6;
+        --darkreader-selection-background: #15539c;
+        --darkreader-selection-text: #e5e0d8;
+      }
+    </style>
+    <style class="darkreader darkreader--root-vars" media="screen"></style>
+    <style class="darkreader darkreader--user-agent" media="screen">
+      html {
+        background-color: #242525 !important;
+      }
+      html {
+        color-scheme: dark !important;
+      }
+      html,
+      body {
+        background-color: #242525;
+      }
+      html,
+      body {
+        border-color: #776f62;
+        color: #e5e0d8;
+      }
+      a {
+        color: #4791e6;
+      }
+      table {
+        border-color: #5c6060;
+      }
+      ::placeholder {
+        color: #b2aa9e;
+      }
+      input:-webkit-autofill,
+      textarea:-webkit-autofill,
+      select:-webkit-autofill {
+        background-color: #484a12 !important;
+        color: #e5e0d8 !important;
+      }
+      ::-webkit-scrollbar {
+        background-color: #2b2d2d;
+        color: #aca496;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #4e5151;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #5f6364;
+      }
+      ::-webkit-scrollbar-thumb:active {
+        background-color: #515455;
+      }
+      ::-webkit-scrollbar-corner {
+        background-color: #242525;
+      }
+      ::selection {
+        background-color: #15539c !important;
+        color: #e5e0d8 !important;
+      }
+      ::-moz-selection {
+        background-color: #15539c !important;
+        color: #e5e0d8 !important;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-VG80HET2CQ&amp;l=dataLayer&amp;cx=c"
+    ></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-W5SZPZHL"
+    ></script>
+    <script>
+      !(function (e, t, a, n, g) {
+        ;(e[n] = e[n] || []),
+          e[n].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var m = t.getElementsByTagName(a)[0],
+          r = t.createElement(a)
+        ;(r.async = !0),
+          (r.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-W5SZPZHL'),
+          m.parentNode.insertBefore(r, m)
+      })(window, document, 'script', 'dataLayer')
+    </script>
+    <script>
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      ;(window.dataLayer = window.dataLayer || []),
+        gtag('js', new Date()),
+        gtag('config', 'G-VG80HET2CQ')
+    </script>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://characterai.io/static/favicon_v2.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://characterai.io/static/favicon-32x32_v2.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://characterai.io/static/favicon-16x16_v2.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://characterai.io/static/apple-touch-icon_v2.png"
+    />
+    <link
+      rel="mask-icon"
+      href="https://characterai.io/static/safari-pinned-tab.svg"
+      color="#2b2b2b"
+    />
+    <link rel="manifest" href="https://characterai.io/static/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="”apple-itunes-app”" content="app-id=1671705818" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <meta name="revised" content="Wednesday, August 10th, 2022, 11:06 am" />
+    <meta property="og:site_name" content="character.ai" />
+    <meta property="og:type" content="article" />
+    <meta property="twitter:site" content="@character_ai" />
+    <meta
+      property="og:title"
+      content="Chat now with Hu Tao · created by @Zap"
+    />
+    <title>Character.AI - Hu Tao</title>
+    <meta name="description" content="From Genshin Impact" />
+    <meta
+      property="og:description"
+      content="Hu Tao: Heya. I'm the 77th Director of the Wangsheng Funeral Parlor, Hu Tao. Are you one of my clients?"
+    />
+    <meta
+      property="twitter:description"
+      content="Hu Tao: Heya. I'm the 77th Director of the Wangsheng Funeral Parlor, Hu Tao. Are you one of my clients?"
+    />
+    <meta
+      property="twitter:image"
+      content="https://characterai.io/i/300/static/avatars/uploaded/2022/10/6/Dpn-S6j9KqoddxRD-1hNc20GYuSqNaescfnhJ--naAo.webp"
+    />
+    <meta property="og:width" content="300" />
+    <meta property="og:height" content="300" />
+    <meta property="twitter:card" content="summary" />
+    <script defer="defer" src="/static/js/main.a491eef4.js"></script>
+    <link href="/static/css/main.955e847b.css" rel="stylesheet" />
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <style type="text/css" data-glamor=""></style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <meta name="react-scroll-to-bottom:version" content="4.2.0" />
+    <style type="text/css">
+      .ReactFlagsSelect-module_flagsSelect__2pfa2 {
+        position: relative;
+        vertical-align: inherit;
+        padding-bottom: 5px;
+        text-align: left;
+      }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+      .ReactFlagsSelect-module_flagsSelectInline__cUnnz {
+        display: inline-block;
+      }
+
+      .ReactFlagsSelect-module_selectBtn__19wW7 {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        font-family: inherit;
+        color: #4d4d4d;
+        border: thin solid rgba(77, 77, 77, 0.3);
+        border-radius: 4px;
+        background: transparent;
+      }
+      .ReactFlagsSelect-module_selectBtn__19wW7:after,
+      .ReactFlagsSelect-module_selectBtn__19wW7[aria-expanded='true']:after {
+        content: ' ';
+        width: 0;
+        height: 0;
+        display: inline-block;
+        margin-left: 5px;
+      }
+      .ReactFlagsSelect-module_selectBtn__19wW7:after {
+        border-top: 5px solid #4d4d4d;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 0;
+      }
+      .ReactFlagsSelect-module_selectBtn__19wW7[aria-expanded='true']:after {
+        border-top: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #4d4d4d;
+      }
+
+      .ReactFlagsSelect-module_disabledBtn__3A4GF {
+        background: #eaeaea;
+        cursor: default;
+      }
+
+      .ReactFlagsSelect-module_label__27pw9,
+      .ReactFlagsSelect-module_secondaryLabel__37t1D {
+        font-size: 1em;
+        padding-left: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .ReactFlagsSelect-module_secondaryLabel__37t1D {
+        color: #707070;
+        padding-left: 5px;
+      }
+
+      .ReactFlagsSelect-module_selectValue__152eS,
+      .ReactFlagsSelect-module_selectOption__3pcgW {
+        cursor: pointer;
+        padding: 0 8px;
+        margin: 4px 0;
+        white-space: nowrap;
+      }
+
+      .ReactFlagsSelect-module_selectValue__152eS {
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .ReactFlagsSelect-module_selectOption__3pcgW {
+        padding: 2px 18px;
+      }
+      .ReactFlagsSelect-module_selectOption__3pcgW:hover,
+      .ReactFlagsSelect-module_selectOption__3pcgW:focus {
+        outline: none;
+        background: #eaeaea;
+      }
+
+      .ReactFlagsSelect-module_selectFlag__2q5gC {
+        display: inline-flex;
+        font-size: 1.2em;
+      }
+
+      .ReactFlagsSelect-module_selectOptionValue__vS99- {
+        display: flex;
+        align-items: center;
+      }
+
+      .ReactFlagsSelect-module_selectOptionWithlabel__2GpmM {
+        padding: 4px 10px;
+      }
+
+      .ReactFlagsSelect-module_selectOptions__3LNBJ {
+        position: absolute;
+        z-index: 999999;
+        border: 1px solid #bdbbbb;
+        border-radius: 3px;
+        background: #ffffff;
+        margin-top: 8px;
+        padding: 8px 0;
+        max-height: 180px;
+        overflow: auto;
+      }
+
+      .ReactFlagsSelect-module_selectOptionsWithSearch__1W03w {
+        padding: 0 0 8px 0;
+      }
+
+      .ReactFlagsSelect-module_fullWidthOptions__1XeR6 {
+        right: 0;
+        left: 0;
+      }
+
+      .ReactFlagsSelect-module_alignOptionsToRight__3Qvq2 {
+        right: 0;
+      }
+
+      .ReactFlagsSelect-module_filterBox__3m8EU {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding-top: 8px;
+        background: #ffffff;
+      }
+      .ReactFlagsSelect-module_filterBox__3m8EU input {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      .ReactFlagsSelect-module_filterBox__3m8EU input:focus {
+        outline: none;
+      }
+    </style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <style type="text/css">
+      .styles_faq-row-wrapper__3vA1D {
+        background-color: var(--faq-bg-color, white);
+      }
+      .styles_faq-row-wrapper__3vA1D h2 {
+        margin: 0;
+        color: var(--title-text-color, black);
+        font-size: var(--title-text-size, 30px);
+      }
+      .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        border-bottom: 1px solid #ccc;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c {
+        flex-direction: column;
+        position: relative;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        color: var(--row-title-color, black);
+        font-size: var(--row-title-text-size, large);
+        cursor: pointer;
+        align-items: center;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_no-tabfocus__1HmyD {
+        outline: none;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY
+        .styles_row-title-text__1MuhU {
+        padding-right: 3em;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY
+        .styles_icon-wrapper__2cftw {
+        max-width: 25px;
+        max-height: 25px;
+        margin: 0;
+        padding: 0;
+        color: var(--arrow-color, black);
+        transform: rotate(0deg);
+        transition: transform var(--transition-duration, 0.3s);
+        position: absolute;
+        top: 13px;
+        right: 12px;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY
+        .styles_icon-wrapper__2cftw
+        svg {
+        width: 100%;
+        height: 100%;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY
+        .styles_icon-wrapper__2cftw
+        svg {
+        fill: var(--arrow-color, black);
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_closed__39w54
+        + .styles_row-content__QOGZd {
+        visibility: hidden;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_closed__39w54
+        + .styles_row-content__QOGZd.styles_animate__3ecdr {
+        opacity: 0;
+        transition: height var(--transition-duration, 0.3s);
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_closed__39w54
+        + .styles_row-content__QOGZd.styles_static__3chYW {
+        display: none;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_expanded__3elPy
+        + .styles_row-content__QOGZd {
+        visibility: visible;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_expanded__3elPy
+        + .styles_row-content__QOGZd.styles_static__3chYW {
+        display: block;
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_expanded__3elPy
+        .styles_icon-wrapper__2cftw {
+        transform: rotate(180deg);
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-title__1YiiY.styles_expanding__2OAFB
+        .styles_icon-wrapper__2cftw {
+        transform: rotate(180deg);
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-content__QOGZd {
+        overflow: hidden;
+        transition: height var(--transition-duration, 0.3s);
+        transition-timing-function: var(--timing-function, ease);
+      }
+      .styles_faq-row-wrapper__3vA1D
+        .styles_row-body__1NvUo
+        .styles_faq-row__2YF3c
+        .styles_row-content__QOGZd
+        .styles_row-content-text__2sgAB {
+        color: var(--row-content-color, black);
+        font-size: var(--row-content-text-size, medium);
+        padding: var(--row-content-padding-top, 0)
+          var(--row-content-padding-right, 0)
+          var(--row-content-padding-bottom, 0)
+          var(--row-content-padding-left, 0);
+      }
+    </style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <style type="text/css">
+      body {
+        color: rgba(0, 0, 0, 0.85);
+        background-color: #fff;
+      }
+
+      .react-switch .react-switch-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .react-switch-docusaurus .react-switch-icon {
+        font-size: 14px;
+      }
+
+      .react-switch > .react-switch-bg {
+        box-sizing: border-box;
+      }
+
+      .react-switch-github__light > .react-switch-bg {
+        border: 3px solid #d1d5da;
+      }
+
+      .react-switch-github__dark > .react-switch-bg {
+        border: 3px solid #3c1e70;
+      }
+
+      .react-switch-fluent__light > .react-switch-bg {
+        border: 1px solid #605e5c;
+      }
+
+      .react-switch-fluent__dark > .react-switch-bg {
+        border: 1px solid #0078d4;
+      }
+    </style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <style data-emotion="css" data-s=""></style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <meta name="darkreader" content="ebddfe10ce3c4007a25bc9ee8c2e4495" />
+    <style class="darkreader darkreader--override" media="screen"></style>
+    <style data-emotion="react-scroll-to-bottom--css-ucvgr" data-s=""></style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <style data-styled="active" data-styled-version="5.3.6"></style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <meta
+      property="og:image"
+      content="https://characterai.io/i/80/static/avatars/uploaded/2022/10/6/Dpn-S6j9KqoddxRD-1hNc20GYuSqNaescfnhJ--naAo.webp"
+    />
+    <meta name="robots" content="all" data-react-helmet="true" />
   </head>
-  <body>
+  <body style="height: 100%">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-W5SZPZHL"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      >
+      </iframe>
+    </noscript>
+    <div id="root" style="height: 100%"></div>
+    <script
+      defer=""
+      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+      data-cf-beacon='{"rayId":"826811324c460994","version":"2023.10.0","token":"de6c8a8324c04a50b30bdeb96bc8d410"}'
+      crossorigin="anonymous"
+    ></script>
+    <div class="ReactModalPortal"></div>
+    <div class="ReactModalPortal"></div>
   </body>
 </html>

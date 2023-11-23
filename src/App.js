@@ -1,13 +1,13 @@
 import ChatPage from './pages/chatpage'
-import logo from './logo.svg'
+import LoginPage from './pages/LoginPage'
 import MainPage from './pages/mainpage'
-// import './App.css'
 
 function App() {
   return (
     <div className="apppage">
       {/* <MainPage /> */}
       <ChatPage />
+      {/* <LoginPage /> */}
       <div></div>
     </div>
   )

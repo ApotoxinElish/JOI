@@ -1,0 +1,79 @@
+.anime-content {
+  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
+  transform: none;
+  opacity: 1;
+}
+
+.portrait-swiper-slide {
+  width: auto !important;
+  margin-right: 5px !important;
+  padding: 10px 0;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  background-color: rgba(13, 13, 13, 0.7);
+  border-radius: 50%;
+  position: absolute;
+
+  font-weight: 700;
+  height: 40px;
+  width: 40px;
+  top: 40%;
+
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  z-index: 10;
+}
+
+.swiper .swiper-button-prev {
+  left: 100px;
+  right: auto;
+}
+
+.swiper .swiper-button-next {
+  left: auto;
+  right: 30px;
+}
+
+.swiper .swiper-button-disabled,
+.swiper .swiper-button-disabled {
+  display: none;
+}
+
+.swiper .swiper-button-prev:after,
+.swiper .swiper-button-next:after {
+  font-size: 15px !important;
+  color: rgb(229, 224, 216) !important;
+}
+
+.swiper .swiper-pagination {
+  display: none;
+}
+
+.swiper .swiper-scrollbar {
+  display: none;
+}
+
+/*!* 在较小的屏幕尺寸下显示按钮 *!
+  @media (max-width: 1400px) {
+      .swiper-button-next,
+      .swiper-button-prev {
+          display: block;
+      }
+  }*/
+
+.horizontal-line {
+  width: 100%;
+  margin: 16px;
+  height: 2px;
+  background: rgb(204, 204, 204);
+  /* 其他样式属性 */
+}

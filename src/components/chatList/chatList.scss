@@ -62,13 +62,13 @@
   display: none;
 }
 
-/*!* 在较小的屏幕尺寸下显示按钮 *!
-  @media (max-width: 1400px) {
-      .swiper-button-next,
-      .swiper-button-prev {
-          display: block;
-      }
-  }*/
+// 在较小的屏幕尺寸下显示按钮
+// @media (max-width: 1400px) {
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     display: block;
+//   }
+// }
 
 .horizontal-line {
   width: 100%;

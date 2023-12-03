@@ -1,0 +1,53 @@
+/* styles.css */
+.character-card {
+  /*flex: 1 1 0;*/
+  width: 150px;
+  height: 150px;
+  background: rgb(43, 44, 45);
+  display: flex;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 12px;*/
+  flex-direction: column;
+}
+
+.avatar-container {
+  width: 160px;
+  height: 160px;
+  padding: 0 12px;
+}
+
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.avatar-image {
+  width: 108px;
+  height: 108px;
+  border-radius: 14px;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  margin-bottom: 8px;
+  filter: saturate(1);
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  position: relative;
+}
+
+.avatar-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: block;
+  text-align: center;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+}

@@ -1,0 +1,50 @@
+/* styles.css */
+
+.character-slide-card-v3 {
+  flex: 1 1 0;
+  width: 170px;
+  height: 226px;
+  background: rgb(43, 44, 45);
+  display: flex;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  flex-direction: column;
+}
+
+.character-description {
+  font-size: 12px;
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*width: 105%;*/
+}
+
+.username-truncated {
+  font-size: 12px;
+  width: 85px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.username {
+  color: rgba(229, 224, 216, 0.5);
+  text-decoration: none;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

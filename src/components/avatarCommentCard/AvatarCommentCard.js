@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
-// import './AvatarCommentCard.css'
+import './AvatarCommentCard.scss'
 import AvatarCard from '../avatarCard/AvatarCard'
-// import { ButtonBase, MenuList, Popover, SvgIcon } from '@mui/material'
+
+import { useState } from 'react'
+import { ButtonBase, MenuList, Popover, SvgIcon } from '@mui/material'
 
 const AvatarCommentCard = (props) => {
   const author = '@Xomu'
@@ -9,7 +10,7 @@ const AvatarCommentCard = (props) => {
 
   const characterDescription = props.characterData.introduction
 
-  const [anchorEl, setAnchorEl] = React.useState(null)
+  const [anchorEl, setAnchorEl] = useState(null)
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget)
@@ -62,7 +63,7 @@ const AvatarCommentCard = (props) => {
             28.1m
           </div>
 
-          {/* <ButtonBase
+          <ButtonBase
             tabIndex={0}
             type="button"
             aria-label="more"
@@ -81,9 +82,9 @@ const AvatarCommentCard = (props) => {
             >
               <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
             </SvgIcon>
-          </ButtonBase> */}
+          </ButtonBase>
 
-          {/* <Popover
+          <Popover
             open={open}
             anchorEl={anchorEl}
             onClose={handleClose}
@@ -97,7 +98,7 @@ const AvatarCommentCard = (props) => {
             }}
           >
             The content of the Popover.
-          </Popover> */}
+          </Popover>
         </div>
       </div>
     </div>

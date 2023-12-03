@@ -1,5 +1,6 @@
 import './ScrollableTab.scss'
-import * as React from 'react'
+
+import { useState } from 'react'
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import Box from '@mui/material/Box'
@@ -7,7 +8,7 @@ import { ButtonBase } from '@mui/material'
 import { type } from '@testing-library/user-event/dist/type'
 
 export default function ScrollableTab() {
-  const [value, setValue] = React.useState(0)
+  const [value, setValue] = useState(0)
 
   const handleChange = (event, newValue) => {
     setValue(newValue)

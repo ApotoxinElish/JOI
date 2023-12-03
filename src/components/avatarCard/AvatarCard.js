@@ -1,4 +1,4 @@
-import React from 'react'
+import './AvatarCard.scss'
 // import { Avatar, AvatarGroup } from 'rsuite'
 
 function AvatarCard(props) {
@@ -24,4 +24,5 @@ function AvatarCard(props) {
     </div>
   )
 }
+
 export default AvatarCard

@@ -1,0 +1,56 @@
+.create-container {
+  width: auto;
+  padding-left: 110px;
+  padding-right: 0px;
+  padding-top: 10px;
+}
+
+.create-section {
+  padding-top: 5px;
+}
+
+.input-section {
+  padding-top: 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.home-sec-header {
+  display: flex;
+  font-size: 17px;
+  font-weight: 650;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.button-container {
+  padding: 20px;
+}
+
+.update-button {
+  background-color: #007bff; /* 蓝色背景 */
+  color: #fff; /* 白色文字 */
+  border: 1px solid #007bff; /* 蓝色边框 */
+  padding: 10px 20px;
+  cursor: pointer; /* 鼠标样式 */
+  border-radius: 5px; /* 圆角 */
+}
+
+.update-button:hover {
+  background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+  border: 1px solid #0056b3; /* 鼠标悬停时的边框颜色 */
+}
+
+.text-muted {
+  color: #6c757d;
+  padding: 2px;
+}

@@ -1,7 +1,6 @@
 import './chatList.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import React, { useRef, useEffect } from 'react'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -43,24 +42,60 @@ function ChatList(props) {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          {/*                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>
-                    <SwiperSlide className="portrait-swiper-slide"><DynamicComponent/></SwiperSlide>*/}
+          {/* <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide>
+          <SwiperSlide className="portrait-swiper-slide">
+            <DynamicComponent />
+          </SwiperSlide> */}
 
           {chatData.data.map((item) => (
             <SwiperSlide key={item.id} className="portrait-swiper-slide">

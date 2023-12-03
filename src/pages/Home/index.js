@@ -10,7 +10,7 @@ const Home = () => {
 
   // useEffect(() => {
   //   // 在组件加载后发送网络请求并获取数据
-  //   fetch('https://127.0.0.1:8888/character/showall')
+  //   fetch('https://127.0.0.1:8080/character/showall')
   //     .then((response) => response.json())
   //     .then((data) => {
   //       // 在这里处理获取的数据，例如将其存储在state中

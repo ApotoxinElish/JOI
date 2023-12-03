@@ -5,7 +5,7 @@ import axios from 'axios'
 // 3. Request interceptor/response interceptor
 
 const request = axios.create({
-  baseURL: 'http://www.joi.com',
+  baseURL: 'http://127.0.0.1:8088/api/user',
   timeout: 5000,
 })
 

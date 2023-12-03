@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     console.log('init!')
     // 在组件加载后发送POST请求并提交数据到后端
-    fetch('http://127.0.0.1:8888/character/showall', {
+    fetch('http://127.0.0.1:8080/character/showall', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

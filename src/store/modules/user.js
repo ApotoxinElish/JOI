@@ -30,7 +30,7 @@ const userReducer = userStore.reducer
 const fetchLogin = (loginForm) => {
   return async (dispatch) => {
     // 1. Send asynchronous request
-    const res = await request.post('/login', loginForm)
+    const res = await request.post('/api/user/login', loginForm)
     // 2. Submit the synchronous action for token deposit
     dispatch(setToken(res.data.token))
   }

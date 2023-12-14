@@ -21,7 +21,7 @@ function HomePageNavbar() {
   }
 
   const gotoCreate = () => {
-    navigate('/createPage')
+    navigate('/create')
   }
 
   return (
@@ -143,7 +143,7 @@ function HomePageNavbar() {
           </li>
 
           <li className="nav-item">
-            <a className="" style={{ textDecoration: 'none' }} href="/chats">
+            <a className="" style={{ textDecoration: 'none' }} href="/chat">
               <div className="nav-icon-container">
                 <span className="nav-icon">
                   <svg

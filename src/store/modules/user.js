@@ -7,12 +7,14 @@ const userStore = createSlice({
   name: 'user',
   // Data state
   initialState: {
-    token: '',
+    token: localStorage.getItem('token_key') || '',
   },
   // Synchronous modification method
   reducers: {
     setToken(state, action) {
       state.token = action.payload
+      // localstorage Stores a copy
+      localStorage.setItem('token_key', action.payload)
     },
   },
 })
@@ -30,9 +32,34 @@ const userReducer = userStore.reducer
 const fetchLogin = (loginForm) => {
   return async (dispatch) => {
     // 1. Send asynchronous request
-    const res = await request.post('/api/user/login', loginForm)
+    const res = await request.post('/api/user/login2', loginForm)
+    console.log(res)
+    if (res.code === '200') {
+      console.log(res.code)
+      localStorage.setItem('is_login', true)
+    } else {
+      console.log('fail')
+      localStorage.setItem('is_login', false)
+    }
     // 2. Submit the synchronous action for token deposit
-    dispatch(setToken(res.data.token))
+    // dispatch(setToken(res.data.token))
+  }
+}
+
+const sendMessage = (messageForm) => {
+  return async (dispatch) => {
+    // 1. Send asynchronous request
+    const res = await request.post('/chat/sendmessage', messageForm)
+    console.log(res)
+    if (res.code === '200') {
+      console.log(res.code)
+      localStorage.setItem('is_login', true)
+    } else {
+      console.log('fail')
+      localStorage.setItem('is_login', false)
+    }
+    // 2. Submit the synchronous action for token deposit
+    // dispatch(setToken(res.data.token))
   }
 }
 

@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import DropDown from './dropdown'
 
 function ChatTop() {
+  const navigate = useNavigate()
+
   return (
     <div className="container-fluid chattop" style={{ 'max-width': '824px' }}>
       <div></div>
@@ -34,7 +37,11 @@ function ChatTop() {
           <div className="col-1 col-md-1">
             <div className="row">
               <div className="p-0">
-                <button className="btn" role="button">
+                <button
+                  className="btn"
+                  role="button"
+                  onClick={() => navigate('/')}
+                >
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
